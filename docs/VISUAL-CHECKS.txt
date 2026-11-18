@@ -1,0 +1,37 @@
+SoF2VR verification notes
+========================
+
+The November 17 package includes the HUD and knife holster update. Virtual
+checks in Prague covered both handed modes, the visible primary and M203
+ammo counts, the off-screen ammo fallback, and drawing the knife from the
+rifle and with the free hand while holding the M1911. Front inspection
+showed the vertical sheath seated at the guard with the grip pointing down.
+
+The r2 material rendering fix was checked in the virtual OpenXR runtime
+at 2540 x 2560 per eye. In the comparison sequence that reproduced the
+slowdown, fresh game frames rose from about 11 to 31 per second, close
+to the earlier November 10 build in the same sequence. M1911 and M4
+reloads and the supported M590 pump sequence passed with the fix.
+
+November 12–13, 2026 development checks used the original game renderer
+with the project's virtual OpenXR runtime. They covered the compact HUD,
+including primary and secondary M4 ammo on either side for handedness,
+the revised holster orientation, the tracked M590 presentation through
+equip states, and the M590 fire/pump/fire sequence in both handed modes.
+The asset checks covered 33 weapon slots and 110 restored glove cuffs.
+
+The November 7 checks covered the main-hand knife draw and two grip
+flips in Prague.
+A diagnostic run using the same blade collision path hit a controlled
+NPC once through native damage. The air swing produced no hit, and the
+M1911 fired with the knife in the other hand. These runs completed with
+zero reported virtual OpenXR errors. The separate wheel check exercised
+the see-through wheel in the same game scene before the blade change.
+
+Earlier outdoor virtual checks covered Colombia and generated day/night
+missions. They do not cover every level or lighting effect.
+
+Packaging verifies the build receipt, installed runtime hashes, native
+game code fingerprints, bundled binary dependencies, and archived bytes.
+The virtual runtime and test fixtures are outside the distribution.
+There is no physical headset or performance certification for this build.

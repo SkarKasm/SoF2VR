@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Holster",
+    "author": "Vlad.Mojaev",
+    "url": "https://sketchfab.com/3d-models/holster-847aa2b4c5ac4f41b1abb5d58f86c224",
+    "license": "CC-BY-4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+    "changes": "Geometry reduction, coordinate conversion and fitting. Knife asset: sheath components only; existing KA-BAR unchanged."
+  },
+  {
+    "name": "BUCK 120 General Knife",
+    "author": "Kirilllucas",
+    "url": "https://sketchfab.com/3d-models/buck-120-general-knife-e854d824feb14900b6963729ae122f55",
+    "license": "CC-BY-4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+    "changes": "Geometry reduction, coordinate conversion and fitting. Knife asset: sheath components only; existing KA-BAR unchanged."
+  }
+]

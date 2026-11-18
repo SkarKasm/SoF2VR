@@ -1,0 +1,20 @@
+SoF2VR showcase limitations
+==========================
+
+This build targets the matching GOG single-player 1.03 game. The installer
+checks the executable and three native modules. Multiplayer and other
+controller profiles are outside this preview's coverage.
+
+Virtual OpenXR checks exercise the game and renderer. Headset comfort,
+tracking, SteamVR frame pacing and the latest blade contact still need
+physical confirmation. GPU shared-image transport is preferred. If the
+runtime falls back to CPU transfer, the headset can be substantially
+slower than the desktop mirror.
+
+The torso and optional sleeve IK are experimental. Sleeve arms are off in
+the bundled defaults. Manual reloads are implemented for selected
+weapons. Searchlight and cinematic issues lack full campaign coverage.
+
+The preview includes original SoF2-derived assets and credited third-party
+models. The MP5 and M60 mesh licenses restrict commercial use. Keep the
+credits and corresponding source with the package when sharing it.

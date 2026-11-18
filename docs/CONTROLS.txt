@@ -1,0 +1,56 @@
+SoF2VR right-handed defaults
+============================
+
+Left stick moves. Click it while pushing forward to sprint.
+Right stick turns. Push up to jump and down to crouch.
+Right trigger fires or confirms a menu choice. Left trigger handles
+secondary fire or the nearby charging action. The M4 and OICW require
+support grip for secondary fire.
+X uses doors and buttons. Y opens objectives when the weapon hand is free.
+The left menu button pauses. Hold both stick clicks for about a second
+to recenter. F12 also recenters when the game window has focus.
+
+Hold the right grip to retain the weapon. Release it to drop, or release
+at the matching holster to stow. Hold left grip near the gun to support
+it with two hands. Release to detach. Toggle grip is available in VR OPTIONS.
+
+Holsters and wheel
+
+- Right hip for handguns.
+- Left hip for SMGs.
+- Rear right shoulder for shotguns, assault rifles and sniper rifles.
+- Rear left shoulder for machine guns and grenade or rocket launchers.
+- Front right shoulder for grenades.
+- Upper left chest for the knife. Grip the exposed handle below its sheath.
+- Stomach for spare magazines and shells.
+
+With an empty weapon hand, briefly grip at an occupied slot to draw its
+remembered weapon. Keep holding at the slot to open its category wheel.
+Aim the physical right stick at an icon and press the weapon-hand trigger
+to equip. Release grip while the wheel is open to cancel. Click the right
+stick to page through weapons and Quick Save / Quick Load. Quick Load
+requires a save. The knife draws directly when you press grip at its slot.
+
+For a pistol and knife together, keep the pistol gripped in the weapon
+hand and grip the knife slot with the other hand. The knife trigger flips
+its grip. Move the visible blade into the target to deal damage.
+Left-handed mode mirrors the slots and weapon/support actions.
+
+Physical reloads
+
+Press A to eject the magazine. Grip a spare from the stomach pouch with
+the support hand and feed it into the magazine well. After an empty pistol
+reload, use B to release the slide. For an empty rifle, use the offhand
+trigger at the charging handle or bolt to cycle the action. To manually
+cycle a loaded weapon, hold that trigger at the action and complete a
+back-and-forward stroke. Each full loaded cycle discards a round.
+
+For the M590, take a shell from the pouch and feed it into the receiver
+underside. Release grip before taking the next shell. When pumping is
+needed, hold the support grip and trigger and complete a full stroke.
+M60, MM1, RPG and some alternate modes retain native reload behavior.
+Grenade throws follow the reticle.
+
+Use the VR OPTIONS menu or the launcher's VR Accessibility & Controls to
+change handedness, holster reach, snap or smooth turn, seated mode and
+other settings. Save and Apply commits changes in the game menu.

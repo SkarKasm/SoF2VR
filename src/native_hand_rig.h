@@ -1,0 +1,4 @@
+#ifndef SOF2_NATIVE_HAND_RIG_H
+#define SOF2_NATIVE_HAND_RIG_H
+#define NATIVE_HAND_PARTS 3
+#endif

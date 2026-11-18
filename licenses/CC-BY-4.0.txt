@@ -1,0 +1,9 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+This notice links to the license; it is not a substitute for its legal code.
+License: https://creativecommons.org/licenses/by/4.0/
+Legal code: https://creativecommons.org/licenses/by/4.0/legalcode.en
+
+See WEAPON_ASSET_CREDITS.md and weapon_asset_sources.json for the applicable
+assets, original authors, source URLs, modifications, and upstream credits.
+Each asset retains its own license. No endorsement by its author is implied.

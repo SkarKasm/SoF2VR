@@ -1,0 +1,93 @@
+SoF2VR — showcase preview 2026.11.17-r1
+======================================
+
+1. Launch the original game in flatscreen once, complete its initial graphics
+   setup and exit. This creates this PC's native renderer configuration.
+2. Extract this entire ZIP to a normal folder. Do not run it inside the ZIP.
+3. Double-click Install.cmd and select the game folder containing SoF2.exe.
+4. Connect the headset to PC VR. For the currently used Quest 3S setup,
+   enter Quest Link, then start SteamVR.
+5. In SteamVR Settings > OpenXR, select SteamVR as the OpenXR runtime.
+6. Open SoF2 Launcher.exe in the GAME folder and choose Play VR.
+   Keep the launcher open until the game exits.
+
+Play Flatscreen in the same launcher temporarily removes VR packs/proxy from
+the game's search path and uses separate settings. Saves are shared.
+If a session crashes, close SoF2 and reopen the launcher to allow recovery.
+
+REQUIRED, NOT INCLUDED
+---------------------
+- Your own installed Soldier of Fortune II: Double Helix single-player game.
+  This build targets the matching GOG 1.03 binaries. The installer checks the
+  executable and three native modules. Other editions/executable patches may
+  not match. It does not replace any game executable or native game DLL.
+- 64-bit Windows, a PC VR-capable GPU/driver, and SteamVR.
+- A connected PC VR headset and controllers. Oculus Touch/Quest controllers
+  are the implemented bindings. Other controller profiles are not supplied.
+- Quest users need a working headset-to-PC connection, such as Quest Link
+  with the Meta PC software. This is a PC mod, not a standalone Quest APK.
+- A writable game folder; use a normal games folder if Program Files blocks
+  writes. The mod needs hardware OpenGL framebuffer support. Its fast shared
+  texture path also requires WGL_NV_DX_interop2; fallback may be much slower.
+
+SteamVR: https://store.steampowered.com/app/250820/SteamVR/
+Steam: https://store.steampowered.com/about/
+Meta PC Link: https://www.meta.com/quest/setup/
+
+INCLUDED
+--------
+- Matching x86 game proxy and x64 OpenXR helper.
+- x64 Khronos OpenXR loader 1.1.63, runtime configuration and weapon icons.
+- Current VR assets, including the saved weapon/hand/finger placements.
+- Weapon material rendering fix for stereo stutter at the existing resolution
+  and texture settings.
+- Compact red health and grey armor numbers in the lower-left view, and
+  olive ammo counts beside the equipped weapon, mirrored for left-handed
+  play. Supported weapons also show secondary ammo. Counts shift inward
+  together when either eye would clip the gun-side placement.
+- Restored wrist geometry, a revised pistol holster, a vertical knife sheath
+  with the grip down and the draw zone on the exposed grip, and
+  a shotgun pump that keeps the support hand on the moving fore-end.
+- Flatscreen/VR launcher, installer, uninstaller and read-only package check.
+- Capture plan and YouTube description in SHOWCASE.txt, plus controls,
+  known issues, asset credits, license notices and corresponding mod source.
+
+The loader is not an OpenXR runtime. SteamVR and headset drivers must still
+be installed separately. Testers do not need Python, MinGW, Blender, the
+OpenXR SDK, or a separate Visual C++ redistributable for these mod binaries.
+System DLLs come from Windows. The base game retains its own requirements.
+
+INSTALLATION AND REMOVAL
+------------------------
+Install.cmd asks you to select the game folder and checks compatibility and
+package hashes before writing files. Check Requirements.cmd performs the
+same checks without installing or launching anything.
+
+Setup keeps one backup of replaced files/settings under sof2vr-package in
+the GAME folder. It does not copy the game installation. Existing quality.ini
+settings are kept. Initial VR game settings use a 1920x1080 desktop image,
+the current brighter profile and uncapped engine FPS. Per-eye resolution
+comes from OpenXR and sof2-vr-x64/quality.ini, independently of desktop size.
+Your original flatscreen profile is retained separately.
+
+For removal, close the game/launcher, run Uninstall.cmd and select the same
+folder. Original replaced files/settings are restored; saved games are not
+touched. Modified mod files are preserved under sof2vr-package/kept before
+removal. The small setup record/backups remain for recovery. Do not delete
+sof2-launcher while a mode-switch recovery is pending.
+
+Do not mix this package with old SoF2VR packs or another opengl32.dll mod.
+If a previous tester package is installed, uninstall it before updating.
+
+STATUS
+------
+This is a development preview. See VISUAL-CHECKS.txt for virtual OpenXR
+coverage and KNOWN-ISSUES.txt for limitations. Use REPORT.txt to share feedback.
+
+Keep the source and credits with the archive when sharing the preview.
+The bundled MP5 and M60 meshes carry CC BY-NC 4.0 restrictions.
+The game and third-party media retain their own copyrights/licenses.
+
+Advanced command line (Windows PowerShell):
+powershell -NoProfile -ExecutionPolicy Bypass -File .\Setup.ps1 -Action Install -GameDir "D:\Games\Soldier of Fortune 2"
+Use -Action Check or -Action Uninstall for the other operations.

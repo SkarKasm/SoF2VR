@@ -1,0 +1,11 @@
+{
+  "weapons": [
+    {
+      "id": 3,
+      "gripHeightFraction": 0.15,
+      "mouthInsetCm": 0.6,
+      "radialToleranceCm": 4.5,
+      "seatFraction": 0.72
+    }
+  ]
+}

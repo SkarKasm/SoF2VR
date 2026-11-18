@@ -1,0 +1,19 @@
+SoF2VR showcase feedback — 2026.11.17-r1
+=======================================
+
+Game edition and compatibility check result
+Headset, controllers and PC connection
+CPU, GPU, Windows and graphics driver
+SteamVR version, headset refresh rate and resolution percentage
+VR OPTIONS or quality.ini changes
+
+Map and mission
+Weapon, grip, magazine and chamber state
+Headset view, mirror or both
+Steps to reproduce
+Expected and observed behavior
+How often it happens
+
+After closing the game, relevant logs are sof2_vr_proxy.log in the game
+folder and sof2-vr-x64/sof2_vr_bridge64.log. Review logs and captures for
+personal information before sharing them.

@@ -1,0 +1,727 @@
+{
+  "sourceArchive": "update102.pk3",
+  "path": "ext_data/SOF2.wpn",
+  "sourceSHA256": "a8c1d37bc99d4f2be2a47dcc537a8d5443606ecdc422a735d507022acc9e9267",
+  "weapons": [
+    {
+      "id": 1,
+      "name": "Knife",
+      "category": 1,
+      "playerSelectable": true,
+      "pellets": 1,
+      "clipCapacity": 1,
+      "speed": [
+        0.0,
+        800.0
+      ],
+      "gravityScale": [
+        0,
+        0.5
+      ],
+      "model": "models/weapons/knife/world/knifeworld.glm",
+      "icon": "hud/weapon_icons/knife_icon",
+      "reload": "knife-replenish",
+      "validation": "pending-native-test"
+    },
+    {
+      "id": 2,
+      "name": "US SOCOM",
+      "category": 2,
+      "playerSelectable": true,
+      "pellets": 1,
+      "clipCapacity": 12,
+      "speed": [
+        0.0,
+        0.0
+      ],
+      "gravityScale": [
+        0,
+        0
+      ],
+      "model": "models/weapons/ussocom/world/ussocomworld.glm",
+      "icon": "hud/weapon_icons/ussocom_icon",
+      "reload": "magazine",
+      "validation": "pending-native-test"
+    },
+    {
+      "id": 3,
+      "name": "M1911A1",
+      "category": 2,
+      "playerSelectable": true,
+      "pellets": 1,
+      "clipCapacity": 7,
+      "speed": [
+        0.0,
+        0.0
+      ],
+      "gravityScale": [
+        0,
+        0
+      ],
+      "model": "models/weapons/m1911a1/world/m1911a1world.glm",
+      "icon": "hud/weapon_icons/m1911a1_icon",
+      "reload": "magazine",
+      "validation": "pending-native-test"
+    },
+    {
+      "id": 4,
+      "name": "Silver Talon",
+      "category": 2,
+      "playerSelectable": true,
+      "pellets": 1,
+      "clipCapacity": 7,
+      "speed": [
+        0.0,
+        0.0
+      ],
+      "gravityScale": [
+        0,
+        0
+      ],
+      "model": "models/weapons/silver_talon/world/silver_talonworld.glm",
+      "icon": "hud/weapon_icons/silver_talon_icon",
+      "reload": "magazine",
+      "validation": "pending-native-test"
+    },
+    {
+      "id": 5,
+      "name": "USAS-12",
+      "category": 3,
+      "playerSelectable": true,
+      "pellets": 12,
+      "clipCapacity": 10,
+      "speed": [
+        0.0,
+        0.0
+      ],
+      "gravityScale": [
+        0,
+        0
+      ],
+      "model": "models/weapons/usas12/world/usas12world.glm",
+      "icon": "hud/weapon_icons/usas12_icon",
+      "reload": "magazine",
+      "validation": "pending-native-test"
+    },
+    {
+      "id": 6,
+      "name": "M590",
+      "category": 3,
+      "playerSelectable": true,
+      "pellets": 12,
+      "clipCapacity": 9,
+      "speed": [
+        0.0,
+        0.0
+      ],
+      "gravityScale": [
+        0,
+        0
+      ],
+      "model": "models/weapons/m590/world/m590world.glm",
+      "icon": "hud/weapon_icons/m590_icon",
+      "reload": "pump-shells",
+      "validation": "pending-native-test"
+    },
+    {
+      "id": 7,
+      "name": "Micro Uzi",
+      "category": 4,
+      "playerSelectable": true,
+      "pellets": 1,
+      "clipCapacity": 30,
+      "speed": [
+        0.0,
+        0.0
+      ],
+      "gravityScale": [
+        0,
+        0
+      ],
+      "model": "models/weapons/microuzi/world/microuziworld.glm",
+      "icon": "hud/weapon_icons/microuzi_icon",
+      "reload": "magazine",
+      "validation": "pending-native-test"
+    },
+    {
+      "id": 8,
+      "name": "M3A1",
+      "category": 4,
+      "playerSelectable": true,
+      "pellets": 1,
+      "clipCapacity": 30,
+      "speed": [
+        0.0,
+        0.0
+      ],
+      "gravityScale": [
+        0,
+        0
+      ],
+      "model": "models/weapons/m3a1/world/m3a1world.glm",
+      "icon": "hud/weapon_icons/m3a1_icon",
+      "reload": "magazine",
+      "validation": "pending-native-test"
+    },
+    {
+      "id": 9,
+      "name": "M4",
+      "category": 5,
+      "playerSelectable": true,
+      "pellets": 1,
+      "clipCapacity": 30,
+      "speed": [
+        0.0,
+        1000.0
+      ],
+      "gravityScale": [
+        0,
+        0.5
+      ],
+      "model": "models/weapons/m4/world/m4world.glm",
+      "icon": "hud/weapon_icons/m4_icon",
+      "reload": "magazine",
+      "validation": "pending-native-test"
+    },
+    {
+      "id": 10,
+      "name": "AK74",
+      "category": 5,
+      "playerSelectable": true,
+      "pellets": 1,
+      "clipCapacity": 30,
+      "speed": [
+        0.0,
+        0.0
+      ],
+      "gravityScale": [
+        0,
+        0
+      ],
+      "model": "models/weapons/ak74/world/ak74world.glm",
+      "icon": "hud/weapon_icons/ak74_icon",
+      "reload": "magazine",
+      "validation": "pending-native-test"
+    },
+    {
+      "id": 11,
+      "name": "OICW",
+      "category": 5,
+      "playerSelectable": true,
+      "pellets": 1,
+      "clipCapacity": 30,
+      "speed": [
+        0.0,
+        1500.0
+      ],
+      "gravityScale": [
+        0,
+        1.0
+      ],
+      "model": "models/weapons/oicw/world/oicwworld.glm",
+      "icon": "hud/weapon_icons/oicw_icon",
+      "reload": "dual-magazine",
+      "validation": "pending-native-test"
+    },
+    {
+      "id": 12,
+      "name": "MSG90A1",
+      "category": 6,
+      "playerSelectable": true,
+      "pellets": 1,
+      "clipCapacity": 5,
+      "speed": [
+        0.0,
+        0.0
+      ],
+      "gravityScale": [
+        0,
+        0
+      ],
+      "model": "models/weapons/msg90a1/world/msg90a1world.glm",
+      "icon": "hud/weapon_icons/msg90a1_icon",
+      "reload": "magazine",
+      "validation": "pending-native-test"
+    },
+    {
+      "id": 13,
+      "name": "M60",
+      "category": 7,
+      "playerSelectable": true,
+      "pellets": 1,
+      "clipCapacity": 99,
+      "speed": [
+        0.0,
+        0.0
+      ],
+      "gravityScale": [
+        0,
+        0
+      ],
+      "model": "models/weapons/m60/world/m60world.glm",
+      "icon": "hud/weapon_icons/m60_icon",
+      "reload": "belt-cover",
+      "validation": "pending-native-test"
+    },
+    {
+      "id": 14,
+      "name": "OSPREYM60",
+      "category": 12,
+      "playerSelectable": false,
+      "pellets": 1,
+      "clipCapacity": 99,
+      "speed": [
+        0.0,
+        0.0
+      ],
+      "gravityScale": [
+        0,
+        0
+      ],
+      "model": "models/weapons/m60/world/m60world.glm",
+      "icon": "hud/weapon_icons/m60_icon",
+      "reload": "none",
+      "validation": "pending-native-test"
+    },
+    {
+      "id": 15,
+      "name": "MM1",
+      "category": 7,
+      "playerSelectable": true,
+      "pellets": 1,
+      "clipCapacity": 10,
+      "speed": [
+        1000.0,
+        0.0
+      ],
+      "gravityScale": [
+        0.5,
+        0
+      ],
+      "model": "models/weapons/mm1/world/mm1world.glm",
+      "icon": "hud/weapon_icons/mm1_icon",
+      "reload": "revolving-drum",
+      "validation": "pending-native-test"
+    },
+    {
+      "id": 16,
+      "name": "RPG7",
+      "category": 7,
+      "playerSelectable": true,
+      "pellets": 1,
+      "clipCapacity": 1,
+      "speed": [
+        1500.0,
+        0.0
+      ],
+      "gravityScale": [
+        0.0,
+        0
+      ],
+      "model": "models/weapons/rpg7/world/rpg7world.glm",
+      "icon": "hud/weapon_icons/rpg7_icon",
+      "reload": "single-rocket",
+      "validation": "pending-native-test"
+    },
+    {
+      "id": 17,
+      "name": "OSPREYRPG7",
+      "category": 12,
+      "playerSelectable": false,
+      "pellets": 1,
+      "clipCapacity": 1,
+      "speed": [
+        1500.0,
+        0.0
+      ],
+      "gravityScale": [
+        0.0,
+        0
+      ],
+      "model": "models/weapons/rpg7/world/rpg7world.glm",
+      "icon": "hud/weapon_icons/rpg7_icon",
+      "reload": "none",
+      "validation": "pending-native-test"
+    },
+    {
+      "id": 18,
+      "name": "M67",
+      "category": 8,
+      "playerSelectable": true,
+      "pellets": 1,
+      "clipCapacity": 1,
+      "speed": [
+        850.0,
+        300.0
+      ],
+      "gravityScale": [
+        1.0,
+        1.0
+      ],
+      "model": "models/weapons/m67/world/m67world.glm",
+      "icon": "hud/weapon_icons/m67_icon",
+      "reload": "grenade",
+      "validation": "pending-native-test"
+    },
+    {
+      "id": 19,
+      "name": "M84",
+      "category": 8,
+      "playerSelectable": true,
+      "pellets": 1,
+      "clipCapacity": 1,
+      "speed": [
+        850.0,
+        300.0
+      ],
+      "gravityScale": [
+        1.0,
+        1.0
+      ],
+      "model": "models/weapons/m84/world/m84world.glm",
+      "icon": "hud/weapon_icons/m84_icon",
+      "reload": "grenade",
+      "validation": "pending-native-test"
+    },
+    {
+      "id": 20,
+      "name": "ANM14",
+      "category": 8,
+      "playerSelectable": true,
+      "pellets": 1,
+      "clipCapacity": 1,
+      "speed": [
+        850.0,
+        300.0
+      ],
+      "gravityScale": [
+        1.0,
+        1.0
+      ],
+      "model": "models/weapons/anm14/world/anm14world.glm",
+      "icon": "hud/weapon_icons/anm14_icon",
+      "reload": "grenade",
+      "validation": "pending-native-test"
+    },
+    {
+      "id": 21,
+      "name": "M15",
+      "category": 8,
+      "playerSelectable": true,
+      "pellets": 1,
+      "clipCapacity": 1,
+      "speed": [
+        850.0,
+        300.0
+      ],
+      "gravityScale": [
+        1.0,
+        1.0
+      ],
+      "model": "models/weapons/m15/world/m15world.glm",
+      "icon": "hud/weapon_icons/m15_icon",
+      "reload": "grenade",
+      "validation": "pending-native-test"
+    },
+    {
+      "id": 22,
+      "name": "F1",
+      "category": 8,
+      "playerSelectable": true,
+      "pellets": 1,
+      "clipCapacity": 1,
+      "speed": [
+        850.0,
+        300.0
+      ],
+      "gravityScale": [
+        1.0,
+        1.0
+      ],
+      "model": "models/weapons/f1/world/f1world.glm",
+      "icon": "hud/weapon_icons/f1_icon",
+      "reload": "grenade",
+      "validation": "pending-native-test"
+    },
+    {
+      "id": 23,
+      "name": "L2A2",
+      "category": 8,
+      "playerSelectable": true,
+      "pellets": 1,
+      "clipCapacity": 1,
+      "speed": [
+        850.0,
+        300.0
+      ],
+      "gravityScale": [
+        1.0,
+        1.0
+      ],
+      "model": "models/weapons/l2a2/world/l2a2world.glm",
+      "icon": "hud/weapon_icons/l2a2_icon",
+      "reload": "grenade",
+      "validation": "pending-native-test"
+    },
+    {
+      "id": 24,
+      "name": "MDN11",
+      "category": 8,
+      "playerSelectable": true,
+      "pellets": 1,
+      "clipCapacity": 1,
+      "speed": [
+        850.0,
+        300.0
+      ],
+      "gravityScale": [
+        1.0,
+        1.0
+      ],
+      "model": "models/weapons/mdn11/world/mdn11world.glm",
+      "icon": "hud/weapon_icons/mdn11_icon",
+      "reload": "grenade",
+      "validation": "pending-native-test"
+    },
+    {
+      "id": 25,
+      "name": "SMOHG92",
+      "category": 8,
+      "playerSelectable": true,
+      "pellets": 1,
+      "clipCapacity": 1,
+      "speed": [
+        850.0,
+        300.0
+      ],
+      "gravityScale": [
+        1.0,
+        1.0
+      ],
+      "model": "models/weapons/smohg92/world/smohg92world.glm",
+      "icon": "hud/weapon_icons/smohg92_icon",
+      "reload": "grenade",
+      "validation": "pending-native-test"
+    },
+    {
+      "id": 26,
+      "name": "Binoculars",
+      "category": 9,
+      "playerSelectable": true,
+      "pellets": 1,
+      "clipCapacity": 0,
+      "speed": [
+        0.0,
+        0.0
+      ],
+      "gravityScale": [
+        0,
+        0
+      ],
+      "model": "models\\items\\binoculars\\binoculars.glm",
+      "icon": "hud/weapon_icons/binoculars_icon",
+      "reload": "none",
+      "validation": "pending-native-test"
+    },
+    {
+      "id": 27,
+      "name": "Thermal Vision",
+      "category": 9,
+      "playerSelectable": true,
+      "pellets": 1,
+      "clipCapacity": 0,
+      "speed": [
+        0.0,
+        0.0
+      ],
+      "gravityScale": [
+        0,
+        0
+      ],
+      "model": "models/items/thermal/thermal.glm",
+      "icon": "hud/weapon_icons/thermal_icon",
+      "reload": "none",
+      "validation": "pending-native-test"
+    },
+    {
+      "id": 28,
+      "name": "Night Vision",
+      "category": 9,
+      "playerSelectable": true,
+      "pellets": 1,
+      "clipCapacity": 0,
+      "speed": [
+        0.0,
+        0.0
+      ],
+      "gravityScale": [
+        0,
+        0
+      ],
+      "model": "models/items/nightvision/nightvision.glm",
+      "icon": "hud/weapon_icons/nightvision_icon",
+      "reload": "none",
+      "validation": "pending-native-test"
+    },
+    {
+      "id": 29,
+      "name": "Emplaced M60",
+      "category": 11,
+      "playerSelectable": false,
+      "pellets": 1,
+      "clipCapacity": 99,
+      "speed": [
+        0.0,
+        0.0
+      ],
+      "gravityScale": [
+        0,
+        0
+      ],
+      "model": "models/weapons/m60/world/m60world.glm",
+      "icon": "",
+      "reload": "none",
+      "validation": "pending-native-test"
+    },
+    {
+      "id": 30,
+      "name": "Emplaced RPD",
+      "category": 11,
+      "playerSelectable": false,
+      "pellets": 1,
+      "clipCapacity": 99,
+      "speed": [
+        0.0,
+        0.0
+      ],
+      "gravityScale": [
+        0,
+        0
+      ],
+      "model": "models/weapons/rpd/rpd.glm",
+      "icon": "",
+      "reload": "none",
+      "validation": "pending-native-test"
+    },
+    {
+      "id": 31,
+      "name": "SAM",
+      "category": 12,
+      "playerSelectable": false,
+      "pellets": 1,
+      "clipCapacity": 1,
+      "speed": [
+        1000.0,
+        0.0
+      ],
+      "gravityScale": [
+        0.0,
+        0
+      ],
+      "model": "models/weapons/ussocom/world/ussocomworld.glm",
+      "icon": "",
+      "reload": "none",
+      "validation": "pending-native-test"
+    },
+    {
+      "id": 32,
+      "name": "SON OF SAM",
+      "category": 12,
+      "playerSelectable": false,
+      "pellets": 1,
+      "clipCapacity": 1,
+      "speed": [
+        3000.0,
+        0.0
+      ],
+      "gravityScale": [
+        0.0,
+        0
+      ],
+      "model": "models/weapons/ussocom/world/ussocomworld.glm",
+      "icon": "",
+      "reload": "none",
+      "validation": "pending-native-test"
+    },
+    {
+      "id": 33,
+      "name": "Sam Gladstone",
+      "category": 12,
+      "playerSelectable": false,
+      "pellets": 1,
+      "clipCapacity": 1,
+      "speed": [
+        1000.0,
+        0.0
+      ],
+      "gravityScale": [
+        0.0,
+        0
+      ],
+      "model": "models/characters/average_sleeves/average_sleeves.glm",
+      "icon": "",
+      "reload": "none",
+      "validation": "pending-native-test"
+    },
+    {
+      "id": 34,
+      "name": "Body",
+      "category": 10,
+      "playerSelectable": false,
+      "pellets": 1,
+      "clipCapacity": 0,
+      "speed": [
+        0.0,
+        0.0
+      ],
+      "gravityScale": [
+        0,
+        0
+      ],
+      "model": "models/characters/average_sleeves/average_sleeves.glm",
+      "icon": "",
+      "reload": "none",
+      "validation": "pending-native-test"
+    },
+    {
+      "id": 35,
+      "name": "MP5",
+      "category": 4,
+      "playerSelectable": true,
+      "pellets": 1,
+      "clipCapacity": 30,
+      "speed": [
+        0.0,
+        0.0
+      ],
+      "gravityScale": [
+        0,
+        0
+      ],
+      "model": "models/weapons/mp5/world/mp5world.glm",
+      "icon": "hud/weapon_icons/mp5_icon",
+      "reload": "magazine",
+      "validation": "pending-native-test"
+    },
+    {
+      "id": 36,
+      "name": "Sig 551",
+      "category": 5,
+      "playerSelectable": true,
+      "pellets": 1,
+      "clipCapacity": 30,
+      "speed": [
+        0.0,
+        0.0
+      ],
+      "gravityScale": [
+        0,
+        0
+      ],
+      "model": "models/weapons/sig551/world/sig551world.glm",
+      "icon": "hud/weapon_icons/sig551_icon",
+      "reload": "magazine",
+      "validation": "pending-native-test"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+# SoF2 VR Proxy - MinGW 32-bit Build
+# Run: make -f Makefile.mingw
+
+# Use the bundled x86 cross-toolchain by default. Override CC/AR/STRIP on the
+# make command line when a separate i686 MinGW installation is available.
+TOOLCHAIN_BIN = ../llvm-mingw-20261006-msvcrt-i686/bin
+CC = $(TOOLCHAIN_BIN)/i686-w64-mingw32-gcc
+AR = $(TOOLCHAIN_BIN)/i686-w64-mingw32-ar
+STRIP = $(TOOLCHAIN_BIN)/i686-w64-mingw32-strip
+
+CFLAGS = -m32 -O2 -Wall -Wextra -std=c99 \
+    -I../include \
+    -DWIN32 \
+    -D_WIN32_WINNT=0x0601 \
+    -DUNICODE \
+    -D_UNICODE
+
+LDFLAGS = -m32 -shared -Wl,--kill-at \
+    -lopengl32 \
+    -luser32 \
+    -lgdi32 \
+    -ld3d11 -ldxgi -ldxguid \
+    -lkernel32
+
+# OpenXR loader - link dynamically at runtime
+# No need to link against openxr_loader.lib
+
+SRCDIR = ../src
+OBJDIR = ../build/obj
+
+SOURCES = \
+    $(SRCDIR)/proxy_bridge.c \
+    $(SRCDIR)/game_vr.c \
+    $(SRCDIR)/weapon_wheel.c \
+    $(SRCDIR)/vr_holsters.c \
+    $(SRCDIR)/vr_body_ik.c \
+    $(SRCDIR)/vr_mechanics.c \
+    $(SRCDIR)/opengl_forward.c
+
+OBJECTS = $(SOURCES:$(SRCDIR)/%.c=$(OBJDIR)/%.o)
+ASM_OBJECTS = $(OBJDIR)/opengl_forward.S.o
+
+TARGET = sof2_vr_proxy.dll
+
+all: $(TARGET) launcher bridge64
+
+$(TARGET): $(OBJECTS) $(ASM_OBJECTS) $(SRCDIR)/opengl_proxy.def
+	$(CC) $(LDFLAGS) -o $@ $(OBJECTS) $(ASM_OBJECTS) $(SRCDIR)/opengl_proxy.def
+	$(STRIP) $@
+	@echo "Built $(TARGET)"
+
+$(OBJDIR)/%.o: $(SRCDIR)/%.c $(SRCDIR)/bridge_protocol.h $(SRCDIR)/game_vr.h $(SRCDIR)/weapon_wheel.h $(SRCDIR)/weapon_profiles.h $(SRCDIR)/vr_mechanics.h $(SRCDIR)/outfit_profiles.h $(SRCDIR)/hand_profiles.h $(SRCDIR)/native_hand_rig.h $(SRCDIR)/reload_parts.h $(SRCDIR)/weapon_sides.h $(SRCDIR)/weapon_muzzles.h $(SRCDIR)/weapon_grips.h $(SRCDIR)/hud_capture.h $(SRCDIR)/sky_capture.h
+	@if not exist "$(OBJDIR)" mkdir "$(OBJDIR)"
+	$(CC) $(CFLAGS) -c $< -o $@
+
+$(OBJDIR)/opengl_forward.S.o: $(SRCDIR)/opengl_forward.S
+	@if not exist "$(OBJDIR)" mkdir "$(OBJDIR)"
+	$(CC) $(CFLAGS) -c $< -o $@
+
+$(OBJDIR)/proxy_bridge.o: $(SRCDIR)/magazine_parts.h $(SRCDIR)/loading_parts.h $(SRCDIR)/replacement_models.h
+$(OBJDIR)/proxy_bridge.o: $(SRCDIR)/vr_body_ik.h $(SRCDIR)/body_profiles.h
+$(OBJDIR)/proxy_bridge.o: $(SRCDIR)/native_wrists.h $(SRCDIR)/vr_stowed_weapons.h $(SRCDIR)/weapon_actions.h
+$(OBJDIR)/proxy_bridge.o: $(SRCDIR)/holster_fits.h
+$(OBJDIR)/proxy_bridge.o: $(SRCDIR)/gpu_transport.h
+$(OBJDIR)/proxy_bridge.o: $(SRCDIR)/weapon_effects.h
+$(OBJDIR)/proxy_bridge.o: $(SRCDIR)/knife_collision.h
+$(OBJDIR)/proxy_bridge.o: $(SRCDIR)/magazine_bounds.h
+$(OBJDIR)/proxy_bridge.o: $(SRCDIR)/magazine_interactions.h
+$(OBJDIR)/proxy_bridge.o: $(SRCDIR)/vr_accessibility.h $(SRCDIR)/vr_holster_controls.h $(SRCDIR)/vr_locomotion.h $(SRCDIR)/vr_dropped_weapons.h $(SRCDIR)/vr_holsters.h
+$(OBJDIR)/proxy_bridge.o: $(SRCDIR)/vr_drop_profiles.h
+$(OBJDIR)/proxy_bridge.o: $(SRCDIR)/vr_native_options.h
+$(OBJDIR)/proxy_bridge.o: $(SRCDIR)/weapon_material.h
+$(OBJDIR)/proxy_bridge.o: $(SRCDIR)/vr_number_hud.h
+$(OBJDIR)/vr_holsters.o: $(SRCDIR)/vr_holsters.h
+$(OBJDIR)/vr_body_ik.o: $(SRCDIR)/vr_body_ik.h
+
+clean:
+	rm -rf $(OBJDIR) $(TARGET)
+
+bridge64:
+	powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\build.ps1 -HelperOnly
+
+install:
+	powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\build.ps1 -Install
+
+.PHONY: all clean install bridge64
+
+
+launcher: $(SRCDIR)/launcher.c
+	$(CC) -O2 -Wall -Wextra -std=c99 -D_WIN32_WINNT=0x0601 -municode -mwindows $< -o "SoF2 Launcher.exe" -luser32 -lgdi32 -Wl,--no-insert-timestamp
+
+.PHONY: launcher

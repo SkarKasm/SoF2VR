@@ -1,0 +1,7 @@
+{
+  "asset": "low-poly-usmc-ka-bar-1217",
+  "bladeBase": [0.0, -0.0600, -0.00195],
+  "bladeTip": [0.0, -0.2288013, 0.0101117],
+  "contactRadiusCm": 2.1,
+  "notes": "Source coordinates: blade base immediately ahead of the guard; tip is the mesh's extreme -Y vertex. Transform through the packed replacement calibration, including the user's saved weapon scale. Never change the mesh or hand poses."
+}

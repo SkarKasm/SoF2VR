@@ -1,0 +1,862 @@
+{
+  "version": 2,
+  "purpose": "Native SoF2 scale, explicit source handle centres/axes and weapon-specific reference grip styles. Original hand geometry, UVs and finger bone lengths retained.",
+  "weapons": [
+    {
+      "id": 1,
+      "asset": "low-poly-usmc-ka-bar-1217",
+      "forward": [
+        0,
+        -1,
+        0
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "palm": [
+        0,
+        0.022,
+        0
+      ],
+      "bore": [
+        0,
+        -0.2288,
+        0
+      ],
+      "budget": 2000,
+      "targetLengthMetres": 0.302,
+      "gripCentre": [
+        0,
+        0.022,
+        0
+      ],
+      "gripAxis": [
+        0,
+        -1,
+        0
+      ],
+      "scalePolicy": "physical-length",
+      "nativeLengthExcludedSurfaces": [
+        "blur",
+        "silencer",
+        "bayonet",
+        "beam",
+        "lasersight",
+        "utl"
+      ],
+      "supportStyle": "none",
+      "gameScaleFactor": 1.15,
+      "lockScale": true
+    },
+    {
+      "id": 2,
+      "asset": "socom-mark-23-phase-ii",
+      "forward": [
+        0,
+        1,
+        0
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "palm": [
+        0.023,
+        -0.062,
+        0.065
+      ],
+      "bore": [
+        0,
+        0.13958,
+        0.1298
+      ],
+      "budget": 12000,
+      "targetLengthMetres": 0.245,
+      "gripCentre": [
+        0,
+        -0.083,
+        0.052
+      ],
+      "gripAxis": [
+        0,
+        0.3,
+        0.954
+      ],
+      "scalePolicy": "physical-length",
+      "nativeLengthExcludedSurfaces": [
+        "blur",
+        "silencer",
+        "bayonet",
+        "beam",
+        "lasersight",
+        "utl"
+      ],
+      "supportStyle": "pistol-wrap",
+      "trigger": [
+        0,
+        -0.015,
+        0.085
+      ]
+    },
+    {
+      "id": 3,
+      "asset": "colt-1911",
+      "forward": [
+        0,
+        0,
+        -1
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "palm": [
+        48,
+        -60,
+        260
+      ],
+      "bore": [
+        0,
+        194,
+        -396
+      ],
+      "budget": 14000,
+      "targetLengthMetres": 0.216,
+      "gripCentre": [
+        0,
+        -85,
+        305
+      ],
+      "gripAxis": [
+        0,
+        0.94,
+        -0.34
+      ],
+      "scalePolicy": "physical-length",
+      "nativeLengthExcludedSurfaces": [
+        "blur",
+        "silencer",
+        "bayonet",
+        "beam",
+        "lasersight",
+        "utl"
+      ],
+      "supportStyle": "pistol-wrap",
+      "trigger": [
+        0,
+        30,
+        125
+      ],
+      "gameScaleFactor": 1.25,
+      "lockScale": true
+    },
+    {
+      "id": 4,
+      "asset": "desert-eagle",
+      "forward": [
+        -1,
+        0,
+        0
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "palm": [
+        2.82,
+        0.057,
+        0.12
+      ],
+      "bore": [
+        2.151,
+        0,
+        0.306
+      ],
+      "budget": 9000,
+      "targetLengthMetres": 0.273,
+      "gripCentre": [
+        2.92,
+        0,
+        0.06
+      ],
+      "gripAxis": [
+        -0.3,
+        0,
+        0.954
+      ],
+      "scalePolicy": "physical-length",
+      "nativeLengthExcludedSurfaces": [
+        "blur",
+        "silencer",
+        "bayonet",
+        "beam",
+        "lasersight",
+        "utl"
+      ],
+      "supportStyle": "pistol-wrap",
+      "trigger": [
+        2.68,
+        0,
+        0.2
+      ]
+    },
+    {
+      "id": 6,
+      "asset": "mossberg-590-mariner",
+      "forward": [
+        0,
+        1,
+        0
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "palm": [
+        0.17,
+        -1.45,
+        -0.02
+      ],
+      "bore": [
+        0,
+        4.898,
+        0.687
+      ],
+      "budget": 14000,
+      "targetLengthMetres": 1.04,
+      "supportPalm": [
+        -0.17,
+        2.1,
+        0.15
+      ],
+      "gripCentre": [
+        0,
+        -1.95,
+        0.36
+      ],
+      "gripAxis": [
+        0,
+        0.9,
+        0.436
+      ],
+      "scalePolicy": "physical-length",
+      "nativeLengthExcludedSurfaces": [
+        "blur",
+        "silencer",
+        "bayonet",
+        "beam",
+        "lasersight",
+        "utl"
+      ],
+      "supportCentre": [
+        0,
+        2.0,
+        0.32
+      ],
+      "supportStyle": "pump",
+      "trigger": [
+        0,
+        -1.2,
+        0.1
+      ],
+      "ejectionPoint": [
+        0.149,
+        -0.95,
+        0.56
+      ],
+      "ejectionLocatorNote": "Receiver-side source-space landmark; visual review pending"
+    },
+    {
+      "id": 7,
+      "asset": "uzi-outdated",
+      "forward": [
+        0,
+        1,
+        0
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "palm": [
+        -0.02,
+        -0.012,
+        -0.06
+      ],
+      "bore": [
+        0,
+        0.28738,
+        0.0213
+      ],
+      "budget": 8000,
+      "targetLengthMetres": 0.6581,
+      "gripCentre": [
+        0,
+        -0.012,
+        -0.06
+      ],
+      "gripAxis": [
+        0,
+        0.2,
+        0.98
+      ],
+      "scalePolicy": "physical-length",
+      "nativeLengthExcludedSurfaces": [
+        "blur",
+        "silencer",
+        "bayonet",
+        "beam",
+        "lasersight",
+        "utl"
+      ],
+      "supportStyle": "foreend",
+      "trigger": [
+        0,
+        0.051,
+        -0.025
+      ],
+      "supportCentre": [
+        0,
+        0.09,
+        -0.02
+      ],
+      "geometryCorrections": [
+        "Retained complete original magazine and charging handle islands; no triangle-centroid cuts"
+      ],
+      "ejectionPoint": [
+        0.0224,
+        0.0066,
+        0.024
+      ]
+    },
+    {
+      "id": 8,
+      "asset": "3-grease-gun",
+      "forward": [
+        -1,
+        0,
+        0
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "palm": [
+        0.47,
+        0.13,
+        1.45
+      ],
+      "bore": [
+        -1.984,
+        0,
+        2.052
+      ],
+      "budget": 14000,
+      "targetLengthMetres": 0.76,
+      "supportPalm": [
+        -0.65,
+        -0.13,
+        1.55
+      ],
+      "gripCentre": [
+        1.45,
+        0,
+        1.58
+      ],
+      "gripAxis": [
+        -0.25,
+        0,
+        0.968
+      ],
+      "scalePolicy": "physical-length",
+      "nativeLengthExcludedSurfaces": [
+        "blur",
+        "silencer",
+        "bayonet",
+        "beam",
+        "lasersight",
+        "utl"
+      ],
+      "supportCentre": [
+        -0.38,
+        0,
+        1.2
+      ],
+      "supportStyle": "magazine-housing",
+      "trigger": [
+        0.9,
+        0,
+        1.7
+      ],
+      "geometryCorrections": [
+        "Opened original dust cover 130 degrees about its top hinge; original UVs retained",
+        "Moved flash_m3a1 leaf attachment to replacement barrel centre"
+      ],
+      "ejectionPoint": [
+        -0.22,
+        0.14,
+        2.16
+      ]
+    },
+    {
+      "id": 9,
+      "asset": "a-colt-m4a1m203",
+      "forward": [
+        0,
+        1,
+        0
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "palm": [
+        0.75,
+        -6.7,
+        2.4
+      ],
+      "bore": [
+        0,
+        13.539,
+        5.76
+      ],
+      "budget": 14000,
+      "targetLengthMetres": 0.84,
+      "supportPalm": [
+        -0.75,
+        5.5,
+        3.3
+      ],
+      "gripCentre": [
+        0,
+        -6.7,
+        2.7
+      ],
+      "gripAxis": [
+        0,
+        0.35,
+        0.937
+      ],
+      "scalePolicy": "physical-length",
+      "nativeLengthExcludedSurfaces": [
+        "blur",
+        "silencer",
+        "bayonet",
+        "beam",
+        "lasersight",
+        "utl"
+      ],
+      "supportCentre": [
+        0,
+        5,
+        3.3
+      ],
+      "supportStyle": "launcher-foreend",
+      "trigger": [
+        0,
+        -4.4,
+        3.9
+      ],
+      "ejectionPoint": [
+        0.55,
+        -1.8,
+        5.6
+      ],
+      "alternateFlashPoint": [
+        0,
+        13.066083,
+        3.7478153
+      ],
+      "alternateFlashLocatorNote": "Centre of front rim vertices in source ACR16A4_Colt_GL mesh"
+    },
+    {
+      "id": 10,
+      "asset": "ak-74-wooden-furniture-gameready-free",
+      "forward": [
+        1,
+        0,
+        0
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "palm": [
+        -0.64,
+        -0.1,
+        0.5
+      ],
+      "bore": [
+        2.553,
+        0,
+        0.962
+      ],
+      "budget": 14000,
+      "targetLengthMetres": 0.94,
+      "supportPalm": [
+        0.85,
+        0.1,
+        0.7
+      ],
+      "gripCentre": [
+        -0.82,
+        0,
+        0.5
+      ],
+      "gripAxis": [
+        0.4,
+        0,
+        0.916
+      ],
+      "scalePolicy": "physical-length",
+      "nativeLengthExcludedSurfaces": [
+        "blur",
+        "silencer",
+        "bayonet",
+        "beam",
+        "lasersight",
+        "utl"
+      ],
+      "supportCentre": [
+        1,
+        0,
+        0.82
+      ],
+      "supportStyle": "foreend",
+      "trigger": [
+        -0.42,
+        0,
+        0.7
+      ]
+    },
+    {
+      "id": 11,
+      "asset": "hk-xm39-oicw",
+      "forward": [
+        0,
+        1,
+        0
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "palm": [
+        -0.028,
+        -0.005,
+        -0.071
+      ],
+      "bore": [
+        0.00035,
+        0.39022,
+        -0.007095
+      ],
+      "budget": 16000,
+      "targetLengthMetres": 0.89,
+      "supportPalm": [
+        0.035,
+        -0.26,
+        -0.025
+      ],
+      "gripCentre": [
+        0,
+        -0.065,
+        -0.09
+      ],
+      "gripAxis": [
+        0,
+        0.4,
+        0.916
+      ],
+      "scalePolicy": "physical-length",
+      "nativeLengthExcludedSurfaces": [
+        "blur",
+        "silencer",
+        "bayonet",
+        "beam",
+        "lasersight",
+        "utl"
+      ],
+      "supportCentre": [
+        0,
+        0.235,
+        -0.075
+      ],
+      "supportStyle": "vertical-foregrip",
+      "trigger": [
+        0,
+        0,
+        -0.075
+      ],
+      "deriveForegrip": true,
+      "geometryCorrections": [
+        "Corrected reversed source forward/bore landmarks",
+        "Vertical foregrip derived from the same licensed OICW grip mesh and UVs to match XM29 handling references"
+      ],
+      "ejectionPoint": [
+        0.018,
+        0.1,
+        -0.02
+      ],
+      "ejectionLocatorNote": "Receiver-side source-space landmark; visual review pending"
+    },
+    {
+      "id": 13,
+      "asset": "m60-machine-gun-vietnam-war",
+      "forward": [
+        1,
+        0,
+        0
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "palm": [
+        -0.073,
+        -0.018,
+        0.029
+      ],
+      "bore": [
+        0.2066,
+        0,
+        0.081
+      ],
+      "budget": 16000,
+      "targetLengthMetres": 1.105,
+      "supportPalm": [
+        0.03,
+        0.025,
+        0.045
+      ],
+      "gripCentre": [
+        -0.095,
+        0,
+        0.065
+      ],
+      "gripAxis": [
+        0.35,
+        0,
+        0.937
+      ],
+      "scalePolicy": "physical-length",
+      "nativeLengthExcludedSurfaces": [
+        "blur",
+        "silencer",
+        "bayonet",
+        "beam",
+        "lasersight",
+        "utl"
+      ],
+      "supportCentre": [
+        -0.015,
+        0,
+        0.09
+      ],
+      "supportStyle": "foreend",
+      "trigger": [
+        -0.06,
+        0,
+        0.065
+      ],
+      "ejectionPoint": [
+        -0.03,
+        -0.018,
+        0.09
+      ],
+      "ejectionLocatorNote": "Receiver-side source-space landmark; visual review pending"
+    },
+    {
+      "id": 16,
+      "asset": "rpg-7",
+      "forward": [
+        -1,
+        0,
+        0
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "palm": [
+        -0.505,
+        0.028,
+        -0.16
+      ],
+      "bore": [
+        -1.365,
+        0,
+        0
+      ],
+      "budget": 18000,
+      "targetLengthMetres": 1.35,
+      "supportPalm": [
+        -0.72,
+        -0.045,
+        -0.08
+      ],
+      "gripCentre": [
+        -0.52,
+        0,
+        -0.09
+      ],
+      "gripAxis": [
+        -0.2,
+        0,
+        0.98
+      ],
+      "scalePolicy": "physical-length",
+      "nativeLengthExcludedSurfaces": [
+        "blur",
+        "silencer",
+        "bayonet",
+        "beam",
+        "lasersight",
+        "utl"
+      ],
+      "supportCentre": [
+        -0.29,
+        0,
+        -0.085
+      ],
+      "supportStyle": "rear-handle",
+      "trigger": [
+        -0.6,
+        0,
+        -0.05
+      ]
+    },
+    {
+      "id": 18,
+      "asset": "m67",
+      "forward": [
+        0,
+        1,
+        0
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "budget": 5000,
+      "scalePolicy": "physical-length"
+    },
+    {
+      "id": 19,
+      "asset": "m84-stun-grenade-flashbang",
+      "forward": [
+        0,
+        1,
+        0
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "budget": 5000,
+      "scalePolicy": "physical-length"
+    },
+    {
+      "id": 22,
+      "asset": "russian-f1-grenade-game-ready",
+      "forward": [
+        0,
+        1,
+        0
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "budget": 6000,
+      "scalePolicy": "physical-length"
+    },
+    {
+      "id": 35,
+      "asset": "animated-mp5",
+      "forward": [
+        0,
+        -1,
+        0
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "palm": [
+        -0.027,
+        -0.47,
+        1.45
+      ],
+      "bore": [
+        0,
+        -0.6885,
+        1.585
+      ],
+      "budget": 13000,
+      "targetLengthMetres": 0.68,
+      "supportPalm": [
+        0.028,
+        -0.58,
+        1.49
+      ],
+      "gripCentre": [
+        0,
+        -0.24,
+        1.5
+      ],
+      "gripAxis": [
+        0,
+        -0.35,
+        0.937
+      ],
+      "scalePolicy": "physical-length",
+      "nativeLengthExcludedSurfaces": [
+        "blur",
+        "silencer",
+        "bayonet",
+        "beam",
+        "lasersight",
+        "utl"
+      ],
+      "supportCentre": [
+        0,
+        -0.48,
+        1.58
+      ],
+      "supportStyle": "foreend",
+      "trigger": [
+        0,
+        -0.34,
+        1.505
+      ],
+      "partOffsets": {
+        "magazine": [
+          0,
+          0.015,
+          0.075
+        ]
+      },
+      "geometryCorrections": [
+        "Seated the source magazine in the receiver; original export had it displaced down and forward"
+      ]
+    }
+  ]
+}
